@@ -1,0 +1,7 @@
+{
+  "presets": [
+    "react-native",
+    ["import", { libraryName: "antd-mobile" }],
+    "@babel/preset-env"
+  ]
+}
