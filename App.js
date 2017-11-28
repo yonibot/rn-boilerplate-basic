@@ -11,7 +11,8 @@ import {
   Text,
   View
 } from 'react-native';
-import Button from 'antd-mobile/lib';
+
+import { Button } from 'react-native-elements';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -24,15 +25,13 @@ export default class App extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
+        <Button
+          raised
+          icon={{name: 'home', size: 32}}
+          buttonStyle={{backgroundColor: 'red', borderRadius: 10}}
+          textStyle={{textAlign: 'center'}}
+          title={`Welcome to\nReact Native Elements`}
+          />
       </View>
     );
   }

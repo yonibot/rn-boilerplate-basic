@@ -1,7 +1,9 @@
 {
   "presets": [
     "react-native",
-    ["import", { libraryName: "antd-mobile" }],
-    "@babel/preset-env"
+    "env"
+  ],
+  "plugins": [
+    "babel-plugin-transform-class-properties"
   ]
 }
